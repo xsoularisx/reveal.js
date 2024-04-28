@@ -1,40 +1,161 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<style>
+		.reveal-viewport {
+			background: rgb(33, 53, 71);
+		}
+
+		li {
+			font-size: 36px;
+		}
+
+		li span {
+			color: #33a06f;
+		}
+
+		span {
+			color: rgb(66, 184, 131);
+		}
+
+		.small li {
+			font-size: 16px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2><span>Vue.js</span>: Building User Interfaces and Web Applications</h2>
+				<svg class="logo" viewBox="0 0 128 128" width="240" height="240" data-v-87ac3bb2="">
+					<path fill="#42b883" d="M78.8,10L64,35.4L49.2,10H0l64,110l64-110C128,10,78.8,10,78.8,10z" data-v-87ac3bb2="">
+					</path>
+					<path fill="#35495e" d="M78.8,10L64,35.4L49.2,10H25.6L64,76l38.4-66H78.8z" data-v-87ac3bb2=""></path>
+				</svg>
+			</section>
+
+			<section>
+				<h3>What is <span>Vue.js</span>?</h3>
+				<ul>
+					<li>Framework for building user interfaces and web applications with JavaScript.</li>
+					<li>Focuses on the view layer and simplifies working with libraries.</li>
+					<li>Can be gradually integrated into existing projects.</li>
+					<li>Used by big companies like Alibaba, Twitter, Facebook*, Baidu, EuroNews, Xiaomi, and Sina Weibo.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Comparison of <span>Vue.js</span> with other popular frameworks</h3>
+				<h4 style="color:#dd1b16;">Angular</h4>
+				<ul class="small">
+					<li>Design Philosophy: Vue.js is lightweight and easier to learn, suitable for small to medium-sized projects.
+						Angular is a comprehensive framework for large-scale applications with complex requirements.</li>
+				</ul>
+				<h4 style="color: rgb(97, 218, 251);">React</h4>
+				<ul class="small">
+					<li>Architecture: React is a JavaScript library, while Vue.js is a full-fledged framework.</li>
+					<li>Component-Based Approach: Both React and Vue.js utilize a component-based architecture.</li>
+					<li>Opinionated Structure: Vue.js offers a more opinionated structure and a simpler learning curve, making it
+						more accessible for beginners.</li>
+				</ul>
+				<h4 style="color: rgb(211, 52, 38);">Ember</h4>
+				<ul class="small">
+					<li>Robustness: Ember provides a complete solution with features like routing, data management, and testing
+						out-of-the-box.</li>
+					<li>Focus: Vue.js is a more lightweight framework that primarily focuses on the view layer.</li>
+					<li>Integration: Vue.js provides flexibility and can be easily integrated into existing projects.</li>
+				</ul>
+				<h4 style="color: #ff4000;">Svelte</h4>
+				<ul class="small">
+					<li>Compile-Time Framework: Svelte compiles components into highly efficient JavaScript code.</li>
+					<li>Performance Emphasis: Svelte emphasizes performance and eliminates the need for a virtual DOM.</li>
+					<li>Vue.js Approach: Vue.js uses a virtual DOM and provides a more traditional runtime approach, offering a
+						balance between performance and ease of development.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Key Features of <span>Vue.js</span></h3>
+				<ul>
+					<li><span>Reactivity</span>: Model-View-Controller (MVC) framework, view changes with the model.</li>
+					<li><span>Progressive</span>: Easily integrated into existing projects, allows a smooth transition.</li>
+					<li><span>Simplicity</span>: Low entry barrier, suitable for beginner developers.</li>
+					<li><span>Lightweight</span>: Small file size (around 20 KB), fast loading and better search engine rankings.
+					</li>
+					<li><span>Rapid Development</span>: Templates, extensive documentation, and a supportive community.</li>
+					<li><span>Accessibility</span>: Distributed under the MIT license, free for commercial and personal use.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3><span>Vue.js</span> Structure</h3>
+				<ul>
+					<li><span>Components</span>: Reusable elements forming a hierarchical structure.</li>
+					<li><span>Templates</span>: HTML-based with data binding to the DOM.</li>
+					<li><span>Transitions</span>: Animation effects for DOM elements.</li>
+					<li><span>Directives</span>: Special attributes for dynamic behavior and interaction.</li>
+					<li><span>Filters</span>: Modify data presentation in the DOM.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3><span>Vue.js</span> Ecosystem</h3>
+				<ul>
+					<li><span>Router</span>: Simplifies navigation, supports nested routes and transitions.</li>
+					<li><span>Vuex</span>: Centralized state management for predictable changes.</li>
+					<li><span>Devtools</span>: Browser debugging plugin for component inspection.</li>
+					<li><span>Server Renderer</span>: Server-side rendering for faster initial rendering and SEO.</li>
+					<li><span>Vue CLI</span>: Command-line interface for project setup and management.</li>
+					<li><span>Vue Test Utils</span>: Library for testing Vue.js components.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Conclusion about <span>Vue.js</span></h3>
+				<ul>
+					<li>Versatile and powerful framework for user interfaces and web applications.</li>
+					<li>Popular due to simplicity, reactivity, and progressive nature.</li>
+					<li>Used by beginners and experienced professionals.</li>
+					<li>Active community and growing ecosystem.</li>
+					<li>Promising framework for modern web development.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Thank you for your attention!</h2>
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
 </html>
